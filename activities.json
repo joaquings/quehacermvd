@@ -6,7 +6,8 @@
             "place": "Tristan Narvaja",
             "date": "20/08",
             "image": "img/ph.png",
-            "link": "https://www.google.com"
+            "link": "https://www.google.com",
+            "type": "airelibre"
         },
         {
             "name": "Bon Gut",
@@ -14,7 +15,8 @@
             "place": "Prado",
             "date": "21/08",
             "image": "img/ph.png",
-            "link": "https://www.google.com"
+            "link": "https://www.google.com",
+            "type": "food"
         },
         {
             "name": "Noche de la Nostalgia",
@@ -22,7 +24,8 @@
             "place": "Ciudad Vieja",
             "date": "24/08",
             "image": "img/ph.png",
-            "link": "https://www.google.com"
+            "link": "https://www.google.com",
+            "type": "cultura"
         },
         {
             "name": "Noche de los Museos",
@@ -30,39 +33,8 @@
             "place": "Ciudad Vieja",
             "date": "No se sabe",
             "image": "img/ph.png",
-            "link": "https://www.google.com"
-        },
-        {
-            "name": "Feria",
-            "description": "",
-            "place": "Tristan Narvaja",
-            "date": "20/08",
-            "image": "img/ph.png",
-            "link": "https://www.google.com"
-        },
-        {
-            "name": "Bon Gut",
-            "description": "",
-            "place": "Prado",
-            "date": "21/08",
-            "image": "img/ph.png",
-            "link": "https://www.google.com"
-        },
-        {
-            "name": "Noche de la Nostalgia",
-            "description": "",
-            "place": "Ciudad Vieja",
-            "date": "24/08",
-            "image": "img/ph.png",
-            "link": "https://www.google.com"
-        },
-        {
-            "name": "Noche de los Museos",
-            "description": "",
-            "place": "Ciudad Vieja",
-            "date": "No se sabe",
-            "image": "img/ph.png",
-            "link": "https://www.google.com"
+            "link": "https://www.google.com",
+            "type": "cultura"
         }
     ]
 }

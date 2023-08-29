@@ -14,8 +14,41 @@ fetch(API_URL)
             //document.body.appendChild(paragraph);
             let div = document.createElement('div')
             div.classList = ('col-md-3')
+            let type = 'hola'
 
-            div.innerHTML = `<div class='card'><div class='header'><div><span class='title' href='#'>${actList[i].name}</span><p class='name'>${actList[i].place}</p></div><span class='image'></span></div><p class='description'>${actList[i].description}</p><dl class='post-info'><div class='cr'><dt class='dt'>${actList[i].date}</dt><dd class='dd'>Fecha</dd></div><div class='cr'><dt class='dt '><a href='${actList[i].link}'><i class="fa-solid fa-link linkurl grow"></i></a></dt><dd class='dd'></dd></div></dl></ div>`
+            if (actList[i].type === 'food'){
+                console.log('entra')
+                type = '<i class="fa-solid fa-utensils fa-2x"></i>'
+            }
+            else if (actList[i].type === 'cultura'){
+                console.log('entra')
+                type = '<i class="fa-solid fa-masks-theater fa-2x"></i>'
+            }
+            else if (actList[i].type === 'airelibre'){
+                console.log('entra')
+                type = '<i class="fa-solid fa-tree fa-2x"></i>'
+            }
+            else {
+                type = ''
+            }
+
+            // <i class="fa-solid fa-paw"></i> <i class="fa-solid fa-tree"></i> <i class="fa-solid fa-palette"></i>
+
+            div.innerHTML = `<div class="card grow">
+            <img src="./img/sample.png" class="card-img-top" alt="Image" />
+            <div class="card-body">
+              <h4>${actList[i].name}</h4>
+              <p class="card-text">
+              <i class="fa-solid fa-location-dot"></i> ${actList[i].place}<br>
+              ${actList[i].descriptions}<br>
+              <i class="fa-regular fa-calendar"></i> ${actList[i].date}
+              </p>
+              <div>
+                <a href='${actList[i].link}'><button class="btn w3-pink" type="button">+ info</button></a>
+                <button class="btn">${type}</button>
+              </div>
+            </div>
+          </div>`
             //<img src='${actList[i].image}' class='card-img-top' alt='...'>
 
                 
